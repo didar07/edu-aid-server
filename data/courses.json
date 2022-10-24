@@ -1,0 +1,26 @@
+[
+    {
+        "id": "01",
+        "name": "The Basics of Python"
+    },
+    {
+        "id": "02",
+        "name": "Python Data Structures"
+    },
+    {
+        "id": "03",
+        "name": "Using Python to Access Web Data"
+    },
+    {
+        "id": "04",
+        "name": "Using Databases with Python"
+    },
+    {
+        "id": "05",
+        "name": "Using Databases with Python"
+    },
+    {
+        "id": "06",
+        "name": "Programming for Everybody (Getting Started with Python)"
+    }
+]
