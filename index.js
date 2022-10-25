@@ -23,11 +23,14 @@ app.get('/course/:id', (req, res) => {
     res.send(allCourse)
 })
 
+app.get('/course', (req, res) => {
+    res.send(courses)
+})
 
 app.get('/course/:id', (req, res) => {
     const id = req.params.id
     console.log(req.params.id)
-    const selectedCourse = courseDetails.find(cd => cd._id === id)
+    const selectedCourse = courseDetails.find(cd => cd._id == id)
     res.send(selectedCourse)
 })
 
