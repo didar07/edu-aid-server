@@ -18,7 +18,16 @@ app.get('/python-courses', (req, res) => {
 
 app.get('/course/:id', (req, res) => {
     const id = req.params.id
-    const selectedCourse = courseDetails.find(cd => cd._id == id)
+    console.log(id)
+    const allCourse = courseDetails.filter(cd => cd.course_id == id)
+    res.send(allCourse)
+})
+
+
+app.get('/course/:id', (req, res) => {
+    const id = req.params.id
+    console.log(req.params.id)
+    const selectedCourse = courseDetails.find(cd => cd._id === id)
     res.send(selectedCourse)
 })
 
